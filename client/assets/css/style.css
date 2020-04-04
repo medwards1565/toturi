@@ -1,0 +1,83 @@
+/* Color Theme */
+/* 
+#2C3531
+#116466
+#D9B08C
+#FFCB9A
+#D1E8E2 
+*/
+/* root start */
+:root {
+	--primary-color: #2c3531;
+	--secondary-color: #116466;
+	--tertiary-color: #d9b08c;
+	--highlights: #ffcb9a;
+	--text: #d1e8e2 !important;
+}
+
+body {
+	background: var(--primary-color);
+	color: var(--text);
+	/* min-height: 100%; */
+}
+/* root end */
+/* nav start */
+.navbar {
+	background: var(--secondary-color);
+	color: var(--text);
+	min-height: 100%;
+}
+.navbar-light .navbar-brand {
+	color: var(--text);
+}
+.navbar-light .navbar-toggler {
+	border-color: var(--text);
+}
+.navbar-light .navbar-nav .active > .nav-link {
+	color: var(--text);
+}
+.navbar-light .navbar-nav .nav-link {
+	color: var(--text);
+}
+.navbar-light .navbar-nav .nav-link:hover {
+	color: var(--highlights);
+}
+/* nav end */
+/* main start */
+.main-row {
+	position: relative;
+	min-height: -webkit-fill-available;
+}
+.jumbotron {
+	background: var(--primary-color);
+	margin-bottom: 0px;
+	min-height: 90vh;
+}
+/* main end */
+/* game start */
+#game-scene {
+	display: flex;
+	justify-content: center;
+}
+/* game end */
+/* footer start */
+.main-row > footer {
+	position: absolute;
+	bottom: 0;
+}
+.card {
+	border: 0px;
+}
+.card-body {
+	color: var(--text);
+	background: var(--secondary-color);
+}
+.card-body > ul > li > a {
+	text-decoration: none;
+	color: var(--text);
+}
+.card-body > ul > li > a:hover {
+	text-decoration: none;
+	color: var(--highlights);
+}
+/* footer end */
