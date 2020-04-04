@@ -1,3 +1,4 @@
+// not connected yet
 var config = {
 	type: Phaser.AUTO,
 
